@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <RadioGroup
+        android:id="@+id/counter_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/increase_button">
+
+        <RadioButton
+            android:id="@+id/increase_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Increase" />
+
+        <RadioButton
+            android:id="@+id/decrease_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnIncTextSize"
+            android:text="INCREASE TEXT SIZE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnDecTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECREASE TEXT SIZE" />
+        <Button
+            android:id="@+id/btnChangeDir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE DIRECTION" />
+    </LinearLayout>
+
+</FrameLayout>
